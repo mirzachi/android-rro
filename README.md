@@ -1,2 +1,3 @@
 # android-rro
-Research and analysis of the Runtime Resource Overlay (RRO) mechanism in Android.
+
+This repository is a collection of diagrams and other resources that explain the internals of the Android´s Runtime Resource Overlay (RRO) mechanism.
