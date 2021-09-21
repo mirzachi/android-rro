@@ -1,0 +1,85 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+header android-master
+title Android OverlayManagerService (OMS)
+
+participant Client as client
+participant OverlayManagerService as oms
+participant PackageManagerService as pms
+participant ActivityManagerService as ams
+participant TargetApp as app
+
+alt Overlay APK installed disabled
+
+client -> oms : setEnabled
+oms -> oms : handleIncomingUser
+note right of oms: Permissions checks
+oms -> oms : enforceActor
+oms -> oms : updateInternalState
+
+oms -> pms : setEnabledOverlayPackages
+note over oms, pms
+Updates the target
+packages' set of enabled
+ overlays in PackageManager
+ (PackageSetting, PackageUserState).
+end note
+oms <- pms : affectedTargets
+
+oms -> ams : scheduleApplicationInfoChanged(affectedTargets)
+note over oms, ams
+Tell the activity manager to tell a
+set of packages to reload their resources
+end note
+ams -> pms : getApplicationInfo()
+note over pms, ams
+Information you can retrieve about a particular application.  This
+corresponds to information collected from the AndroidManifest.xml's
+
+* permissions
+* taskAffinity
+* ...
+* sourceDir - Full path to the base APK for this application.
+* resourceDirs - Full paths to the locations of extra resource packages
+(runtime overlays) this application uses.
+* ...
+end note
+pms -> ams : ApplicationInfo
+ams -> app : scheduleApplicationInfoChanged (ApplicationInfo)
+
+app -> app : handleApplicationInfoChanged
+note over app
+* Take the diff of the old ApplicationInfo and the new
+to see if anything needs to change.
+* Update all affected loaded packages representations (LoadedApk) with new package information.
+* Create a new ResourcesImpl (point to resources files via new paths)
+ * Here is the new AssetManager created with new APKs (list of ApkAssets)
+ * Already loaded APKs are taken from the cache
+ * New overlay APKs are loaded from the disk
+ * Loading happens on the C/C++ side
+* Update all affected Resources objects to use new ResourcesImpl (ResourcesManager->applyNewResourceDirsLocked)
+* Reset cache.
+* Trigger app framework Configuration change event
+(look for resources again using best matching algorithm via new ResourcesImpl (overlays included))
+* Relaunch all activities (now they use new configuration/resources)
+    * Preserve windows to avoid black flickers when overlays change.
+    * onDestroy followed by onCreate called
+end note
+
+else Overlay package installed enabled
+
+oms <- pms : Intent.action = ACTION_PACKAGE_ADDED
+
+oms -> pms : getPackageInfo(packageName)
+
+oms <- pms : PackageInfo
+
+oms -> pms : setEnabledOverlayPackages
+
+note over oms, app
+From here same process as above
+end note
+end
+@enduml
+

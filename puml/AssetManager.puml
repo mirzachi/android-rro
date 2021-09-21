@@ -1,0 +1,76 @@
+@startuml
+
+title AssetManager (JAVA (android.content.res) and C/C++ (androidfw))
+
+class android.content.res.ResourcesImpl #lightblue;line:green
+class android.content.res.AssetManager #lightblue;line:green
+class android.content.res.ApkAssets #lightblue;line:green
+
+class androidfw.AssetManager2
+class androidfw.ApkAssets
+class androidfw.LoadedArsc
+class androidfw.LoadedPackage
+class androidfw.AssetManager2.ConfiguredPackage
+class androidfw.AssetManager2.ConfiguredOverlay
+class androidfw.AssetManager2.PackageGroup
+class androidfw.IdmapResMap
+
+
+android.content.res.ResourcesImpl *-- android.content.res.AssetManager : owns
+android.content.res.AssetManager o-- android.content.res.ApkAssets : loaded APKs exist on the C/C++ side
+
+androidfw.AssetManager2 o-- androidfw.ApkAssets : pointers to loaded APK representations
+
+androidfw.AssetManager2 o-- androidfw.AssetManager2.PackageGroup : represents a logical package, which can be made up of many individual packages
+
+
+android.content.res.AssetManager --> androidfw.AssetManager2 : JNI calls
+
+android.content.res.ApkAssets --> androidfw.ApkAssets : JNI calls
+
+androidfw.LoadedArsc o-- androidfw.LoadedPackage : loaded packages from resources.arsc
+
+androidfw.AssetManager2.PackageGroup o-- androidfw.AssetManager2.ConfiguredPackage :  set of loaded packages that make-up this group
+androidfw.AssetManager2.PackageGroup o-- androidfw.AssetManager2.ConfiguredOverlay :  RROs that overlay resources in this package group
+androidfw.AssetManager2.ConfiguredOverlay *-- androidfw.IdmapResMap :  a mapping of target resource ids to a values or resource ids that should overlay the target
+androidfw.AssetManager2.ConfiguredPackage o-- androidfw.LoadedPackage :  a pointer to the immutable, loaded package info.
+
+@enduml
+
+// Represents an single package.
+  struct ConfiguredPackage {
+      // A pointer to the immutable, loaded package info.
+      const LoadedPackage* loaded_package_;
+
+      // A mutable AssetManager-specific list of configurations that match the AssetManager's
+      // current configuration. This is used as an optimization to avoid checking every single
+      // candidate configuration when looking up resources.
+      ByteBucketArray<FilteredConfigGroup> filtered_configs_;
+  };
+
+  // Represents a Runtime Resource Overlay that overlays resources in the logical package.
+  struct ConfiguredOverlay {
+      // The set of package groups that overlay this package group.
+      IdmapResMap overlay_res_maps_;
+
+      // The cookie of the overlay assets.
+      ApkAssetsCookie cookie;
+  };
+
+  // Represents a logical package, which can be made up of many individual packages. Each package
+  // in a PackageGroup shares the same package name and package ID.
+  struct PackageGroup {
+      // The set of packages that make-up this group.
+      std::vector<ConfiguredPackage> packages_;
+
+      // The cookies associated with each package in the group. They share the same order as
+      // packages_.
+      std::vector<ApkAssetsCookie> cookies_;
+
+      // Runtime Resource Overlays that overlay resources in this package group.
+      std::vector<ConfiguredOverlay> overlays_;
+
+      // A library reference table that contains build-package ID to runtime-package ID mappings.
+      std::shared_ptr<DynamicRefTable> dynamic_ref_table = std::make_shared<DynamicRefTable>();
+  };
+

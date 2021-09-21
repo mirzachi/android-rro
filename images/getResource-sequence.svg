@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1545px" preserveAspectRatio="none" style="width:1326px;height:1545px;background:#FFFFFF;" version="1.1" viewBox="0 0 1326 1545" width="1326px" zoomAndPan="magnify"><defs><filter height="300%" id="fx30n5eshu3u6" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="259" x="530" y="43.3486">Resources lookup sequence</text><rect fill="#DDDDDD" height="1483.4922" style="stroke:#A80036;stroke-width:1.0;" width="764.5" x="16" y="55.5938"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="35" x="380.75" y="67.6606">JAVA</text><rect fill="#DDDDDD" height="1483.4922" style="stroke:#A80036;stroke-width:1.0;" width="239" x="885" y="55.5938"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="45" x="982" y="67.6606">C/C++</text><rect fill="#FFFFFF" filter="url(#fx30n5eshu3u6)" height="1356.7656" style="stroke:#000000;stroke-width:2.0;" width="1299" x="10" y="127.0234"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="44" x2="44" y1="110.0234" y2="1500.7891"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="178" x2="178" y1="110.0234" y2="1500.7891"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="309" x2="309" y1="110.0234" y2="1500.7891"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="426" x2="426" y1="110.0234" y2="1500.7891"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="557" x2="557" y1="110.0234" y2="1500.7891"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="729.5" x2="729.5" y1="110.0234" y2="1500.7891"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="804.5" x2="804.5" y1="110.0234" y2="1500.7891"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="952" x2="952" y1="110.0234" y2="1500.7891"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1073" x2="1073" y1="110.0234" y2="1500.7891"/><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="44" x="20" y="74.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="27" y="94.7217">App</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="44" x="20" y="1499.7891"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="27" y="1519.7842">App</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="148" x="102" y="74.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="109" y="94.7217">ResourcesManager</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="148" x="102" y="1499.7891"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="109" y="1519.7842">ResourcesManager</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="87" x="264" y="74.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="271" y="94.7217">Resources</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="87" x="264" y="1499.7891"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="271" y="1519.7842">Resources</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="119" x="365" y="74.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="372" y="94.7217">ResourcesImpl</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="119" x="365" y="1499.7891"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="372" y="1519.7842">ResourcesImpl</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="115" x="498" y="74.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="505" y="94.7217">AssetManager</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="115" x="498" y="1499.7891"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="505" y="1519.7842">AssetManager</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="90" x="682.5" y="74.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="689.5" y="94.7217">ApkAssets</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="90" x="682.5" y="1499.7891"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="689.5" y="1519.7842">ApkAssets</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="32" x="786.5" y="74.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18" x="793.5" y="94.7217">JNI</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="32" x="786.5" y="1499.7891"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18" x="793.5" y="1519.7842">JNI</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="123" x="889" y="74.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="896" y="94.7217">AssetManager2</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="123" x="889" y="1499.7891"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="896" y="1519.7842">AssetManager2</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="90" x="1026" y="74.7266"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="1033" y="94.7217">ApkAssets</text><rect fill="#FEFECE" filter="url(#fx30n5eshu3u6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="90" x="1026" y="1499.7891"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="1033" y="1519.7842">ApkAssets</text><path d="M10,127.0234 L139,127.0234 L139,134.0234 L129,144.0234 L10,144.0234 L10,127.0234 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="1356.7656" style="stroke:#000000;stroke-width:2.0;" width="1299" x="10" y="127.0234"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="84" x="25" y="140.0903">Application</text><path d="M452,149.1563 L452,174.1563 L659,174.1563 L659,159.1563 L649,149.1563 L452,149.1563 " fill="#FBFB77" filter="url(#fx30n5eshu3u6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M649,149.1563 L649,159.1563 L659,159.1563 L649,149.1563 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="458" y="166.2231">Loads and caches ApkAssets</text><path d="M868,188.2891 L868,379.2891 L1274,379.2891 L1274,198.2891 L1264,188.2891 L868,188.2891 " fill="#FBFB77" filter="url(#fx30n5eshu3u6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1264,188.2891 L1264,198.2891 L1274,198.2891 L1264,188.2891 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="121" x="874" y="205.356">struct ApkAssets {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="12" x="874" y="220.4888">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="377" x="882" y="235.6216">// Interface for retrieving assets provided by an ApkAssets.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="371" x="882" y="250.7544">std::unique_ptr&lt;const AssetsProvider&gt; assets_provider_;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="150" x="882" y="265.8872">const std::string path_;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="152" x="882" y="281.02">time_t last_mod_time_;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="272" x="882" y="296.1528">package_property_t property_flags_ = 0U;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="275" x="882" y="311.2856">std::unique_ptr&lt;Asset&gt; resources_asset_;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="252" x="882" y="326.4185">std::unique_ptr&lt;Asset&gt; idmap_asset_;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="325" x="882" y="341.5513">std::unique_ptr&lt;const LoadedArsc&gt; loaded_arsc_;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="350" x="882" y="356.6841">std::unique_ptr&lt;const LoadedIdmap&gt; loaded_idmap_;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="9" x="874" y="371.8169">}</text><polygon fill="#A80036" points="166,406.0156,176,410.0156,166,414.0156,170,410.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="44" x2="172" y1="410.0156" y2="410.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="51" y="404.9497">getResources(...)</text><polygon fill="#A80036" points="55,435.1484,45,439.1484,55,443.1484,51,439.1484" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="49" x2="177" y1="439.1484" y2="439.1484"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="61" y="434.0825">Resources</text><polygon fill="#A80036" points="297.5,464.2813,307.5,468.2813,297.5,472.2813,301.5,468.2813" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="44" x2="303.5" y1="468.2813" y2="468.2813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="51" y="463.2153">getString(id)</text><polygon fill="#A80036" points="414.5,493.4141,424.5,497.4141,414.5,501.4141,418.5,497.4141" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="309.5" x2="420.5" y1="497.4141" y2="497.4141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="316.5" y="492.3481">getAssets()</text><polygon fill="#A80036" points="320.5,522.5469,310.5,526.5469,320.5,530.5469,316.5,526.5469" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="314.5" x2="425.5" y1="526.5469" y2="526.5469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91" x="326.5" y="521.481">AssetManager</text><polygon fill="#A80036" points="545.5,551.6797,555.5,555.6797,545.5,559.6797,549.5,555.6797" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="309.5" x2="551.5" y1="555.6797" y2="555.6797"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="316.5" y="550.6138">getResourceText(id)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="557.5" x2="599.5" y1="584.8125" y2="584.8125"/><line style="stroke:#A80036;stroke-width:1.0;" x1="599.5" x2="599.5" y1="584.8125" y2="597.8125"/><line style="stroke:#A80036;stroke-width:1.0;" x1="558.5" x2="599.5" y1="597.8125" y2="597.8125"/><polygon fill="#A80036" points="568.5,593.8125,558.5,597.8125,568.5,601.8125,564.5,597.8125" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="158" x="564.5" y="579.7466">getResourceValue(id, ...)</text><polygon fill="#A80036" points="792.5,622.9453,802.5,626.9453,792.5,630.9453,796.5,626.9453" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="557.5" x2="798.5" y1="626.9453" y2="626.9453"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="200" x="564.5" y="621.8794">nativeGetResourceValue(id, ...)</text><polygon fill="#A80036" points="940.5,652.0781,950.5,656.0781,940.5,660.0781,944.5,656.0781" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="804.5" x2="946.5" y1="656.0781" y2="656.0781"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="811.5" y="651.0122">GetResource(id, ...)</text><path d="M664,669.0781 L664,724.0781 L1236,724.0781 L1236,679.0781 L1226,669.0781 L664,669.0781 " fill="#FBFB77" filter="url(#fx30n5eshu3u6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1226,669.0781 L1226,679.0781 L1236,679.0781 L1226,669.0781 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="482" x="670" y="686.145">AssetManager2 is the main entry point for accessing assets and resources.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="551" x="670" y="701.2778">AssetManager2 provides caching of resources retrieved via the underlying ApkAssets.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="353" x="670" y="716.4106">Has  an ordered list of pointers to ApkAssets to search.</text><line style="stroke:#A80036;stroke-width:1.0;" x1="952.5" x2="994.5" y1="754.6094" y2="754.6094"/><line style="stroke:#A80036;stroke-width:1.0;" x1="994.5" x2="994.5" y1="754.6094" y2="767.6094"/><line style="stroke:#A80036;stroke-width:1.0;" x1="953.5" x2="994.5" y1="767.6094" y2="767.6094"/><polygon fill="#A80036" points="963.5,763.6094,953.5,767.6094,963.5,771.6094,959.5,767.6094" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="101" x="959.5" y="749.5435">FindEntry(id, ...)</text><path d="M606,780.6094 L606,986.6094 L1295,986.6094 L1295,790.6094 L1285,780.6094 L606,780.6094 " fill="#FBFB77" filter="url(#fx30n5eshu3u6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1285,780.6094 L1285,790.6094 L1295,790.6094 L1285,780.6094 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="161" x="612" y="797.6763">Here the search happens</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="616" y="812.8091"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="668" x="612" y="827.9419">Search algorithm: https://developer.android.com/guide/topics/resources/providing-resources#BestMatch</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="616" y="843.0747"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="375" x="612" y="858.2075">Finds the best entry for `resid` from the set of ApkAssets.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="638" x="612" y="873.3403">Among others the search returns the cookie representing the ApkAssets in which the value resides.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="616" y="888.4731"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="310" x="612" y="903.606">PackageGroups are searched through internally!</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="665" x="612" y="918.7388">First the normal packages are searched, then overlayed and it is then compared whether the overlayed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="249" x="612" y="933.8716">is a better match than the normal one.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="616" y="949.0044"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="565" x="612" y="964.1372">The configuration of the entry for the overlay must be equal to or better than the target</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="297" x="612" y="979.27">configuration to be chosen as the better value</text><polygon fill="#A80036" points="815.5,1013.4688,805.5,1017.4688,815.5,1021.4688,811.5,1017.4688" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="809.5" x2="951.5" y1="1017.4688" y2="1017.4688"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91" x="821.5" y="1012.4028">SelectedValue</text><path d="M714,1030.4688 L714,1357.4688 L1187,1357.4688 L1187,1040.4688 L1177,1030.4688 L714,1030.4688 " fill="#FBFB77" filter="url(#fx30n5eshu3u6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1177,1030.4688 L1177,1040.4688 L1187,1040.4688 L1177,1030.4688 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="720" y="1047.5356">struct SelectedValue {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="12" x="720" y="1062.6685">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="436" x="736" y="1077.8013">// The cookie representing the ApkAssets in which the value resides.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="269" x="736" y="1092.9341">ApkAssetsCookie cookie = kInvalidCookie;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="724" y="1108.0669"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="389" x="736" y="1123.1997">// The data for this value, as interpreted according to `type`.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="179" x="736" y="1138.3325">Res_value::data_type data;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="724" y="1153.4653"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="736" y="1168.5981">// Type of the data value.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="736" y="1183.731">uint8_t type;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="724" y="1198.8638"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="421" x="736" y="1213.9966">// The bitmask of configuration axis that this resource varies with.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="221" x="736" y="1229.1294">// See ResTable_config::CONFIG_*.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92" x="736" y="1244.2622">uint32_t flags;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="724" y="1259.395"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="348" x="736" y="1274.5278">// The resource ID from which this value was resolved.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92" x="736" y="1289.6606">uint32_t resid;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="724" y="1304.7935"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="396" x="736" y="1319.9263">// The configuration for which the resolved value was defined.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="153" x="736" y="1335.0591">ResTable_config config;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="9" x="720" y="1350.1919">}</text><polygon fill="#A80036" points="568.5,1384.3906,558.5,1388.3906,568.5,1392.3906,564.5,1388.3906" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="562.5" x2="803.5" y1="1388.3906" y2="1388.3906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="139" x="574.5" y="1383.3247">Copied SelectedValue</text><polygon fill="#A80036" points="437.5,1413.5234,427.5,1417.5234,437.5,1421.5234,433.5,1417.5234" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5" x2="556.5" y1="1417.5234" y2="1417.5234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="443.5" y="1412.4575">CharSequence</text><polygon fill="#A80036" points="320.5,1442.6563,310.5,1446.6563,320.5,1450.6563,316.5,1446.6563" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="314.5" x2="425.5" y1="1446.6563" y2="1446.6563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="326.5" y="1441.5903">CharSequence</text><polygon fill="#A80036" points="55,1471.7891,45,1475.7891,55,1479.7891,51,1475.7891" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="49" x2="308.5" y1="1475.7891" y2="1475.7891"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="61" y="1470.7231">String</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="84" x="1235" y="14.2822">android-master</text><!--MD5=[365d514138e377a93d9dc6c97a4c469f]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+header android-master
+title Resources lookup sequence
+
+box "JAVA"
+participant App as app
+participant ResourcesManager as resm
+participant Resources as res
+participant ResourcesImpl as resimpl
+participant AssetManager as am
+participant ApkAssets as aa1
+end box
+participant JNI as jni
+box "C/C++"
+participant AssetManager2 as am2
+participant ApkAssets as aa2
+end box
+
+group Application
+
+note over am
+Loads and caches ApkAssets
+end note
+
+note over aa2
+struct ApkAssets {
+...
+  // Interface for retrieving assets provided by an ApkAssets.
+  std::unique_ptr<const AssetsProvider> assets_provider_;
+  const std::string path_;
+  time_t last_mod_time_;
+  package_property_t property_flags_ = 0U;
+  std::unique_ptr<Asset> resources_asset_;
+  std::unique_ptr<Asset> idmap_asset_;
+  std::unique_ptr<const LoadedArsc> loaded_arsc_;
+  std::unique_ptr<const LoadedIdmap> loaded_idmap_;
+}
+end note
+
+app -> resm : getResources(...)
+
+app <- resm : Resources
+
+app -> res : getString(id)
+
+res -> resimpl : getAssets()
+
+res <- resimpl : AssetManager
+
+res -> am : getResourceText(id)
+
+am -> am : getResourceValue(id, ...)
+
+am -> jni : nativeGetResourceValue(id, ...)
+
+jni -> am2 : GetResource(id, ...)
+
+note over am2
+AssetManager2 is the main entry point for accessing assets and resources.
+AssetManager2 provides caching of resources retrieved via the underlying ApkAssets.
+Has  an ordered list of pointers to ApkAssets to search.
+end note
+
+am2 -> am2 : FindEntry(id, ...)
+
+note over am2
+Here the search happens
+
+Search algorithm: https://developer.android.com/guide/topics/resources/providing-resources#BestMatch
+
+Finds the best entry for `resid` from the set of ApkAssets.
+Among others the search returns the cookie representing the ApkAssets in which the value resides.
+
+PackageGroups are searched through internally!
+First the normal packages are searched, then overlayed and it is then compared whether the overlayed
+is a better match than the normal one.
+
+The configuration of the entry for the overlay must be equal to or better than the target
+configuration to be chosen as the better value
+end note
+
+jni <- am2 : SelectedValue
+
+note over am2
+struct SelectedValue {
+...
+    // The cookie representing the ApkAssets in which the value resides.
+    ApkAssetsCookie cookie = kInvalidCookie;
+
+    // The data for this value, as interpreted according to `type`.
+    Res_value::data_type data;
+
+    // Type of the data value.
+    uint8_t type;
+
+    // The bitmask of configuration axis that this resource varies with.
+    // See ResTable_config::CONFIG_*.
+    uint32_t flags;
+
+    // The resource ID from which this value was resolved.
+    uint32_t resid;
+
+    // The configuration for which the resolved value was defined.
+    ResTable_config config;
+}
+end note
+
+am <- jni : Copied SelectedValue
+
+resimpl <- am : CharSequence
+
+res <- resimpl : CharSequence
+
+app <- res : String
+
+end
+@enduml
+
+@startuml
+
+header android-master
+title Resources lookup sequence
+
+box "JAVA"
+participant App as app
+participant ResourcesManager as resm
+participant Resources as res
+participant ResourcesImpl as resimpl
+participant AssetManager as am
+participant ApkAssets as aa1
+end box
+participant JNI as jni
+box "C/C++"
+participant AssetManager2 as am2
+participant ApkAssets as aa2
+end box
+
+group Application
+
+note over am
+Loads and caches ApkAssets
+end note
+
+note over aa2
+struct ApkAssets {
+...
+  // Interface for retrieving assets provided by an ApkAssets.
+  std::unique_ptr<const AssetsProvider> assets_provider_;
+  const std::string path_;
+  time_t last_mod_time_;
+  package_property_t property_flags_ = 0U;
+  std::unique_ptr<Asset> resources_asset_;
+  std::unique_ptr<Asset> idmap_asset_;
+  std::unique_ptr<const LoadedArsc> loaded_arsc_;
+  std::unique_ptr<const LoadedIdmap> loaded_idmap_;
+}
+end note
+
+app -> resm : getResources(...)
+
+app <- resm : Resources
+
+app -> res : getString(id)
+
+res -> resimpl : getAssets()
+
+res <- resimpl : AssetManager
+
+res -> am : getResourceText(id)
+
+am -> am : getResourceValue(id, ...)
+
+am -> jni : nativeGetResourceValue(id, ...)
+
+jni -> am2 : GetResource(id, ...)
+
+note over am2
+AssetManager2 is the main entry point for accessing assets and resources.
+AssetManager2 provides caching of resources retrieved via the underlying ApkAssets.
+Has  an ordered list of pointers to ApkAssets to search.
+end note
+
+am2 -> am2 : FindEntry(id, ...)
+
+note over am2
+Here the search happens
+
+Search algorithm: https://developer.android.com/guide/topics/resources/providing-resources#BestMatch
+
+Finds the best entry for `resid` from the set of ApkAssets.
+Among others the search returns the cookie representing the ApkAssets in which the value resides.
+
+PackageGroups are searched through internally!
+First the normal packages are searched, then overlayed and it is then compared whether the overlayed
+is a better match than the normal one.
+
+The configuration of the entry for the overlay must be equal to or better than the target
+configuration to be chosen as the better value
+end note
+
+jni <- am2 : SelectedValue
+
+note over am2
+struct SelectedValue {
+...
+    // The cookie representing the ApkAssets in which the value resides.
+    ApkAssetsCookie cookie = kInvalidCookie;
+
+    // The data for this value, as interpreted according to `type`.
+    Res_value::data_type data;
+
+    // Type of the data value.
+    uint8_t type;
+
+    // The bitmask of configuration axis that this resource varies with.
+    // See ResTable_config::CONFIG_*.
+    uint32_t flags;
+
+    // The resource ID from which this value was resolved.
+    uint32_t resid;
+
+    // The configuration for which the resolved value was defined.
+    ResTable_config config;
+}
+end note
+
+am <- jni : Copied SelectedValue
+
+resimpl <- am : CharSequence
+
+res <- resimpl : CharSequence
+
+app <- res : String
+
+end
+@enduml
+
+PlantUML version 1.2021.11beta5(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

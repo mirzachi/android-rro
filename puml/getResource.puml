@@ -1,0 +1,120 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+header android-master
+title Resources lookup sequence
+
+box "JAVA"
+participant App as app
+participant ResourcesManager as resm
+participant Resources as res
+participant ResourcesImpl as resimpl
+participant AssetManager as am
+participant ApkAssets as aa1
+end box
+participant JNI as jni
+box "C/C++"
+participant AssetManager2 as am2
+participant ApkAssets as aa2
+end box
+
+group Application
+
+note over am
+Loads and caches ApkAssets
+end note
+
+note over aa2
+struct ApkAssets {
+...
+  // Interface for retrieving assets provided by an ApkAssets.
+  std::unique_ptr<const AssetsProvider> assets_provider_;
+  const std::string path_;
+  time_t last_mod_time_;
+  package_property_t property_flags_ = 0U;
+  std::unique_ptr<Asset> resources_asset_;
+  std::unique_ptr<Asset> idmap_asset_;
+  std::unique_ptr<const LoadedArsc> loaded_arsc_;
+  std::unique_ptr<const LoadedIdmap> loaded_idmap_;
+}
+end note
+
+app -> resm : getResources(...)
+
+app <- resm : Resources
+
+app -> res : getString(id)
+
+res -> resimpl : getAssets()
+
+res <- resimpl : AssetManager
+
+res -> am : getResourceText(id)
+
+am -> am : getResourceValue(id, ...)
+
+am -> jni : nativeGetResourceValue(id, ...)
+
+jni -> am2 : GetResource(id, ...)
+
+note over am2
+AssetManager2 is the main entry point for accessing assets and resources.
+AssetManager2 provides caching of resources retrieved via the underlying ApkAssets.
+Has  an ordered list of pointers to ApkAssets to search.
+end note
+
+am2 -> am2 : FindEntry(id, ...)
+
+note over am2
+Here the search happens
+
+Search algorithm: https://developer.android.com/guide/topics/resources/providing-resources#BestMatch
+
+Finds the best entry for `resid` from the set of ApkAssets.
+Among others the search returns the cookie representing the ApkAssets in which the value resides.
+
+PackageGroups are searched through internally!
+First the normal packages are searched, then overlayed and it is then compared whether the overlayed
+is a better match than the normal one.
+
+The configuration of the entry for the overlay must be equal to or better than the target
+configuration to be chosen as the better value
+end note
+
+jni <- am2 : SelectedValue
+
+note over am2
+struct SelectedValue {
+...
+    // The cookie representing the ApkAssets in which the value resides.
+    ApkAssetsCookie cookie = kInvalidCookie;
+
+    // The data for this value, as interpreted according to `type`.
+    Res_value::data_type data;
+
+    // Type of the data value.
+    uint8_t type;
+
+    // The bitmask of configuration axis that this resource varies with.
+    // See ResTable_config::CONFIG_*.
+    uint32_t flags;
+
+    // The resource ID from which this value was resolved.
+    uint32_t resid;
+
+    // The configuration for which the resolved value was defined.
+    ResTable_config config;
+}
+end note
+
+am <- jni : Copied SelectedValue
+
+resimpl <- am : CharSequence
+
+res <- resimpl : CharSequence
+
+app <- res : String
+
+end
+
+@enduml
