@@ -246,15 +246,25 @@ The stored string is the path then to the actual file in the application APK (+2
   * Etc.
 * OMS cooperates with *PackageManagerService* (PMS) and *ActivityManagerService* (AMS) in order to deploy the requested overlay 
 during the runtime
-* For apps that are currently not running, OMS interacts with PMS, which then sets up the overlay 
-APK paths for the app that should use the overlay. Later, when the app is started in will be loaded with the correct overlay
-* For apps that are running, OMS interacts with AMS. 
-AMS goes through its list of running processes. 
-For any app or framework affected with the overlay change, the AMS sends a message to it. 
-The application thread picks up the message and triggers the *ResourceManager*, which then swaps the resource implementation 
-with the new one that contains the enabled overlay. 
-This swap causes an application to perform *onConfigurationChanged*. 
-This ensures that the correct overlayed resources are in use after *Activity* recreation.
+* OMS asks PMS to update the target package (app) information regarding its enabled overlay packages.
+* PMS updates PackageSetting for the target packages with a set of enabled overlays and returns a list of affected target packages.
+* OMS informs AMS that ApplicationInfo (resourceDirs – location of runtime overlays) in PMS has been changed.
+ApplicationInfo is generated via information from PackageSetting.
+* AMS asks PMS for new ApplicationInfo.
+* PMS sends to AMS new ApplicationInfo.
+* AMS informs the application activity thread that the ApplicationInfo for the application has been changed
+* After receiving a message from AMS, the application updates framework local states of all already loaded packages with new package information.
+* Application triggers creation of a new ResourcesImpl in the background using the new information got from AMS.
+  * New ResourcesImpl is aware of the new overlay APKs available.
+* Application updates all affected Resources objects to use new ResourcesImpl.
+* Application trigger onConfigurationChanged event.
+  * Activity (visible on the screen) configuration w.r.t resources updated
+* Application relaunches all its activities.
+  * Windows are preserved to avoid black flickers when overlays change.
+
+For apps that are currently not running, OMS interacts with PMS only, which then sets up the overlay APK paths for the app that should use the overlay. 
+Later, when the app is started it will be loaded with the correct overlay. 
+No interaction with AMS is required.
 
 High level representation of system components involved in RROs:
 
